@@ -11,5 +11,5 @@ Afisarea se face pe un display SSO1315 conectat la microcontroler printr-o conex
 Intr-un ciclu continuu se afiseaza sirurile preformatate, data si ora, cu cadenta de o secunda.
 Obs:
 - timpul dat de serverul ntp are ca origine anul 1900, cel folosit in python are referinta anul 1970 (de fapt in majoritatea librariilor ce
-trateaza timpul). Pentru aceasta se introduce valoarea de corectie NTP_DELTA.
+trateaza timpul). Pentru aceasta se introduce valoarea de corectie NTP_1970.
 - pentru corectia de fus orar (+2, Bucuresti) se insumeaza diferenta la ora. De asemenea trebuie avuta in vedere si corectia pentru ora de vara (+1).
