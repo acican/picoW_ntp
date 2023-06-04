@@ -7,3 +7,4 @@ Conectarea la reteaua wifi se face prin libraria "network", furnizand ssid si pa
 Dupa conectare se acceseaza site-ul ntp printr-o conecxiune tip socket. Din mesajul de raspuns se decodeaza informatia privind data si ora,
 din pozitia corespunzatoare (40:44). Se initializeaza RTC microcontroler la valorile citite.
 Afisarea se face pe un display SSO1315 conectat la microcontroler printr-o conexiune I2C, folosind libraria micropython "ssd1306".
+Intr-un ciclu continuu se afiseaza sirurile preformatate, data si ora, cu cadenta de o secunda.
