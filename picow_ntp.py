@@ -6,10 +6,8 @@ import struct
 import ssd1306
 from machine import Pin, I2C
 
-NTP_DELTA = 2208988800
+NTP_1970 = 2208988800
 host = "pool.ntp.org"
-
-led = Pin("LED", Pin.OUT)
 
 ssid = '******'
 password = '********'
@@ -28,7 +26,7 @@ def set_time():
     finally:
         s.close()
     val = struct.unpack("!I", msg[40:44])[0]
-    t = val - NTP_DELTA    
+    t = val - NTP_1970    
     tm = time.gmtime(t)
     machine.RTC().datetime((tm[0], tm[1], tm[2], tm[6], tm[3], tm[4], tm[5], 0))
 
@@ -51,7 +49,6 @@ else:
     status = wlan.ifconfig()
     print( 'ip = ' + status[0] )
 
-led.on()
 set_time()
 print(time.localtime())
 led.off()
