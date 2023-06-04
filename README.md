@@ -1,7 +1,7 @@
 # picoW_npt
  
 Un exemplu de cod in micropython pentru afisarea orei exacte, folosind controlerul pi picoW.
-- afisaj OLED: SSO1315
+- afisaj OLED: SSO1315, GROVE v1.0
 - interpretor: rp2-pico-w-20230426-v1.20.0.uf2
 
 Conectarea la reteaua wifi se face prin libraria "network", furnizand ssid si password-ul ruter-ului.
