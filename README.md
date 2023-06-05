@@ -1,12 +1,11 @@
-# picoW_npt
+# picoW_ntp
  
 Un exemplu de cod in micropython pentru afisarea orei exacte, folosind controlerul pi picoW.
 - afisaj OLED: SSD1315 0.96 inch, GROVE v1.0
 - interpretor: rp2-pico-w-20230426-v1.20.0.uf2
 
 Conectarea la reteaua wifi se face prin libraria "network", furnizand ssid si password-ul ruter-ului.
-Dupa conectare se acceseaza serverul ntp printr-o conexiune tip socket. Din mesajul de raspuns se decodeaza informatia privind data si ora,
-din pozitia corespunzatoare (40:44). Se initializeaza RTC microcontroler la valorile citite.
+Dupa conectare se acceseaza serverul ntp printr-o conexiune tip socket. Mesajul de raspuns al serverului ntp este lung 64 bytes din care cei care poarta informatia de timp, la nivel de secunda, sunt in pozitia 40:44. Se decodeaza valoarea binara si se extrage informatia de timp cu functia python din libraria "time", dupa care se initializeaza RTC microcontroler la valorile citite.
 Afisarea se face pe un display SSO1315 conectat la microcontroler printr-o conexiune I2C, folosind libraria micropython "ssd1306".
 Intr-un ciclu continuu se afiseaza sirurile preformatate, data si ora, cu cadenta de o secunda.
 Obs:
