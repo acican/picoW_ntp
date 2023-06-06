@@ -11,7 +11,6 @@ def get_ntp_time(server='pool.ntp.org', port=123):
     # Set timeout for the socket
     sock.settimeout(5)
     
-    
     # NTP server address
     server_address = (server, port)
     
