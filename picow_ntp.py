@@ -69,7 +69,3 @@ while True:
     display.text(ora, 0, 10, 1)
     display.show()
     time.sleep(1)
-
-#an = str(time.localtime()[0])
-#display.text(an, 0, 0, 1)
-#display.show()
