@@ -50,8 +50,7 @@ else:
     print( 'ip = ' + status[0] )
 
 set_time()
-print(time.localtime())
-led.off()
+#print(time.localtime())
 
 sda=machine.Pin(8)
 scl=machine.Pin(9)
