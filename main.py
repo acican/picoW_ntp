@@ -13,9 +13,8 @@ port = 123
 
 led = Pin("LED", Pin.OUT)
 
-ssid = '***'
-password = '***
-'
+ssid = 'ssid'
+password = 'password'
 
 def set_ntp_time():
     NTP_MSG = bytearray(48)
