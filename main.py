@@ -14,8 +14,8 @@ status = "0"
 
 led = Pin("LED", Pin.OUT)
 
-ssid = 'DIGI_45cb30'
-password = '5932ba34'
+ssid = 'ssid'
+password = 'password'
 
 def set_ntp_time():
     NTP_MSG = bytearray(48)
