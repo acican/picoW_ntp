@@ -1,9 +1,10 @@
 # picoW_ntp
 
 ![IMG_20230608_134847](https://github.com/acican/picoW_ntp/assets/10486613/b6a4c1da-a168-457c-9628-9ca6363ddfe0)
-
  
-Un exemplu de cod in micropython pentru afisarea orei exacte, folosind controlerul pi picoW.
+Un exemplu de cod in micropython pentru afisarea orei exacte, folosind controlerul pi picoW. Codul din fisierul "ntp_client" este generat la cerere pe chatGPT.
+Pentru testare se foloseste:
+- raspberry PicoW
 - afisaj OLED: SSD1315 0.96 inch, GROVE v1.0
 - interpretor: rp2-pico-w-20230426-v1.20.0.uf2
 
